@@ -95,7 +95,7 @@ This project is licensed under the **MIT License**.
 
 | Light Mode                           | Dark Mode                          |
 | ------------------------------------ | ---------------------------------- |
-| ![Light Mode](Screenshot (1).png) | ![Dark Mode](screenshot (2).png) |
+| ![Light Mode](Screenshot(1).png) | ![Dark Mode](screenshot(2).png) |
 
 ---
 
