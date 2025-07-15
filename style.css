@@ -1,0 +1,312 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            transition: all 0.5s ease;
+        }
+
+        .bg-sunny {
+            background: linear-gradient(135deg, #fde047, #fb923c, #f472b6);
+        }
+
+        .bg-rainy {
+            background: linear-gradient(135deg, #9ca3af, #3b82f6, #2563eb);
+        }
+
+        .bg-cloudy {
+            background: linear-gradient(135deg, #d1d5db, #9ca3af, #6b7280);
+        }
+
+        .bg-dark {
+            background: #111827;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-temp {
+            padding: 4px 12px;
+        }
+
+        .btn-mode {
+            padding: 8px;
+            border-radius: 50%;
+        }
+
+        .search-section {
+            margin-bottom: 32px;
+        }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 48px 12px 48px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 16px;
+            color: white;
+            backdrop-filter: blur(10px);
+            outline: none;
+            font-size: 16px;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .search-input:focus {
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 6px 16px;
+            border-radius: 12px;
+        }
+
+        .quick-locations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .location-btn {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 256px;
+        }
+
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 2px solid transparent;
+            border-bottom: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .weather-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 1024px) {
+            .weather-grid {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        .weather-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 32px;
+        }
+
+        .weather-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+
+        .weather-location {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .weather-description {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .weather-icon {
+            width: 64px;
+            height: 64px;
+        }
+
+        .temperature {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .temp-main {
+            font-size: 64px;
+            font-weight: 300;
+            color: white;
+        }
+
+        .temp-unit {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .weather-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .side-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .details-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 24px;
+        }
+
+        .card-title {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .detail-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .forecast-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .forecast-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .forecast-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .forecast-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .dark-mode {
+            background: #111827 !important;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
