@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# SkyLens - Weather App
 
-## Project info
+SkyLens is a clean, responsive weather application built with **React**, **TypeScript**, and **CSS**, allowing users to search for weather conditions by city, view current weather details, a 3-day forecast, toggle temperature units (°C/°F), and switch between light/dark mode.
 
-**URL**: https://lovable.dev/projects/212e68eb-7817-4cc7-9c20-537788545681
+## Features
 
-## How can I edit this code?
+* **Search Weather by City:** Enter any city to fetch and display current weather.
+* **Current Location Support:** Quickly get your local weather with one click.
+* **Quick Location Buttons:** Instantly view weather for New York, London, and Tokyo.
+* **Current Weather Details:** Includes temperature, description, humidity, wind speed, pressure, UV index, and visibility.
+* **3-Day Forecast:** View upcoming weather trends.
+* **Temperature Unit Toggle:** Switch between Celsius and Fahrenheit.
+* **Dark Mode Toggle:** Seamlessly toggle between light and dark modes.
+* **Responsive Design:** Fully mobile-friendly and accessible.
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+* **React** (frontend framework)
+* **TypeScript** (type-safe development)
+* **CSS** (for styling and responsive design)
+* **HTML** (structure)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/212e68eb-7817-4cc7-9c20-537788545681) and start prompting.
+## Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Clone the repository:**
 
-**Use your preferred IDE**
+   ```bash
+   git clone https://github.com/yourusername/skylens-weather-app.git
+   cd skylens-weather-app
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. **Install dependencies:**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+   ```bash
+   npm install
+   ```
 
-Follow these steps:
+3. **Run the development server:**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+   ```bash
+   npm run dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Build for production:**
 
-# Step 3: Install the necessary dependencies.
-npm i
+   ```bash
+   npm run build
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Usage
+
+* Type a city name in the search bar and press `Enter` or click `Search`.
+* Click `Current` to fetch your current location's weather.
+* Use the quick location buttons for instant weather checks.
+* Toggle between `°C` and `°F` using the unit toggle button.
+* Enable dark mode by clicking the moon/sun icon.
+
+## Folder Structure
+
+```
+skylens-weather-app/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── styles/
+│       └── style.css
+│
+├── package.json
+└── tsconfig.json
 ```
 
-**Edit a file directly in GitHub**
+## Future Improvements
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+* Integrate with **OpenWeatherMap API** or **WeatherAPI** for real-time data.
+* Add hourly forecast.
+* User preferences persistence using localStorage.
+* Animations for weather transitions.
+* Accessibility enhancements.
 
-**Use GitHub Codespaces**
+## Contributing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Contributions are welcome! Please fork the repository and submit a pull request for review.
 
-## What technologies are used for this project?
+## License
 
-This project is built with:
+This project is licensed under the **MIT License**.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Screenshots
 
-## How can I deploy this project?
+| Light Mode                           | Dark Mode                          |
+| ------------------------------------ | ---------------------------------- |
+| ![Light Mode](screenshot(1).png) | ![Dark Mode](screenshot(2).png) |
 
-Simply open [Lovable](https://lovable.dev/projects/212e68eb-7817-4cc7-9c20-537788545681) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+> **SkyLens** – See your weather clearly, anywhere.
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+If you need a `LICENSE` or `.gitignore` prepared for this repository for clean GitHub setup, let me know.
