@@ -92,8 +92,7 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 This project is licensed under the **MIT License**.
 
 ## Screenshots
-
-| Light Mode                           
+                           
 | ------------------------------------
 | ![Light Mode](Screenshot(1).png) | 
 ---
