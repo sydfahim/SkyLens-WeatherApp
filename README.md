@@ -93,10 +93,9 @@ This project is licensed under the **MIT License**.
 
 ## Screenshots
 
-| Light Mode                           | Dark Mode                          |
-| ------------------------------------ | ---------------------------------- |
-| ![Light Mode](Screenshot(1).png) | ![Dark Mode](screenshot(2).png) |
-
+| Light Mode                           
+| ------------------------------------
+| ![Light Mode](Screenshot(1).png) | 
 ---
 
 > **SkyLens** – See your weather clearly, anywhere.
